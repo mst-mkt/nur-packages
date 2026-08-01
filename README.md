@@ -18,5 +18,6 @@ mst-mkt's Nix user repository.
 
 ## Packages
 
-| Name | Description | License | Platforms |
-| ---- | ----------- | ------- | --------- |
+| Name                                           | Description                                                              | License         | Platforms                                   |
+| ---------------------------------------------- | ------------------------------------------------------------------------ | --------------- | ------------------------------------------- |
+| [gengo](https://github.com/spenserblack/gengo) | Linguist-inspired language classifier with multiple file source handlers | MIT, Apache-2.0 | x86_64-linux, aarch64-linux, aarch64-darwin |
