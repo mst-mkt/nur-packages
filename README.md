@@ -22,3 +22,4 @@ mst-mkt's Nix user repository.
 | ------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------- | ------------------------------------------- |
 | [gengo](https://github.com/spenserblack/gengo)          | Linguist-inspired language classifier with multiple file source handlers      | MIT, Apache-2.0 | x86_64-linux, aarch64-linux, aarch64-darwin |
 | [gh-pr-reviews](https://github.com/k1LoW/gh-pr-reviews) | GitHub CLI extension to identify unresolved review comments in a pull request | MIT             | x86_64-linux, aarch64-linux, aarch64-darwin |
+| [git-hunk](https://github.com/nexxeln/git-hunk)         | Non-interactive hunk staging for AI agents                                    | Apache-2.0      | x86_64-linux, aarch64-linux, aarch64-darwin |
