@@ -16,6 +16,8 @@
         }
       );
 
+      checks = inputs.self.packages;
+
       overlays.default = final: _prev: import ./. { pkgs = final; };
 
       formatter = forAllSystems (system: inputs.nixpkgs.legacyPackages.${system}.nixfmt-tree);
