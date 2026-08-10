@@ -6,16 +6,16 @@
 
 buildGoModule (finalAttrs: {
   pname = "gh-pr-reviews";
-  version = "0.11.2";
+  version = "0.12.0";
 
   src = fetchFromGitHub {
     owner = "k1LoW";
     repo = "gh-pr-reviews";
     tag = "v${finalAttrs.version}";
-    hash = "sha256-H3YLd8z0HEhtfRwRpHTY0Wv3ZlGotrTXVduIYC4ToLc=";
+    hash = "sha256-9u3zehZ5PgZdoQ0T3Az/9DVN2hzNGF2cvxMPa4W0grU=";
   };
 
-  vendorHash = "sha256-36mijl7hhC6xYj4Q1KcQt9IQzTAcwe/2erWQIyPPQgQ=";
+  vendorHash = "sha256-oJquiIkYK3AB0X8sCxdDVutx7bnLkDyGIu7QYxicWuU=";
 
   ldflags = [
     "-s"
