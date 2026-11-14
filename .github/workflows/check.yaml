@@ -28,6 +28,22 @@ jobs:
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - run: nix fmt -- --ci
 
+  actions-lock:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: cachix/install-nix-action@v31.11.0
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+      - run: nix run --inputs-from . nixpkgs#gh-actions-lock -- --verify
+        env:
+          GH_TOKEN: ${{ github.token }}
+
   nur-eval:
     runs-on: ubuntu-latest
     timeout-minutes: 15
